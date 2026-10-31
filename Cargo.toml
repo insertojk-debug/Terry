@@ -1,0 +1,19 @@
+[package]
+name = "territory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[package.metadata.android]
+package_name = "rs.territory.game"
+label = "Territory"
+version_code = 1
+version_name = "1.0"
+fullscreen = true
+build_targets = ["armv7-linux-androideabi", "aarch64-linux-android"]
